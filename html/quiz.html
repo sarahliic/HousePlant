@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/quiz.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for browser-->
+    <link rel="icon" href="../img/about/spider-plant.png">
+    <meta charset="utf-8"/>
+<title>Take a Quiz  </title>
+
+<script type="text/javascript">
+    function write_name(){
+        var welcome_R = document.getElementById('welcome');
+        var name = document.getElementById('name');
+        
+        var x = "Hello " +name.value + "! "  + ",click on the button -Take quiz- to answer the Questions";
+        document.getElementById("rrr").innerHTML = x ;
+    }
+</script>
+<script type="text/javascript">
+    var numCorrect = 0;
+    function takeTest(){
+        var response = "";
+        var points = 0;
+        
+        var q1 ="What is the color of a sunflower rose? ";
+        var a1 ="Yellow";
+        
+        var q2 = "What season do the flowers bloom? ";
+        var a2 = "Spring season";
+        
+        var q3 ="Do plant need water? ";
+        var a3 ="Yes";
+        
+        response1 = prompt(q1,"");
+        if (response1 ==a1)
+            points= runningTotal(1);
+        else
+            points= runningTotal(0);
+    
+        response2 = prompt(q2,"");
+        if (response2 ==a2)
+            points = runningTotal(1);
+        else
+            points= runningTotal(0);
+        
+        response3 = prompt(q3,"");
+        if (response3 ==a3)
+            points = runningTotal(1);
+        else
+            points= runningTotal(0);
+        
+        document.getElementById("Answers").innerHTML=("Your Answers is: <ol><li>"+response1+"</li><li>"+response2+"</li><li>"+response3+"</li></ol>");
+        document.getElementById("result").innerHTML=("You get a "+points +" Points!");
+        numCorrect = 0;
+        points = 0;
+    }
+    function runningTotal(i){
+        numCorrect += i;
+        return numCorrect;
+    }
+</script>
+</head>
+<body onload ="alert('welcome');">
+    
+    <section> 
+        <nav>
+           <a href="index.html"><img src="../img/mainimg/sflogo.jpg"></a>
+           <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i> <!--it is icons-->
+               <ul>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="index.html">Statistic</a></li>
+                <li><a href="houseplants.html">House Plants</a></li>
+                <li><a href="quiz.html">Take a Quiz</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars " onclick="showMenu()"></i> <!--it is icons-->
+       </nav>
+       </section>
+    <script>
+       var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+            navLinks.style.right="0";
+         }
+         function hideMenu(){
+            navLinks.style.right="-200px";
+         }
+     </script>
+
+
+
+ <section class="main">
+    <p id="welcome"></p>
+    <div class="container">
+    <form>
+        <br>
+        Name:
+        <br>
+        
+        <input class="mytext" type="text" id="name"/><br>
+        <br>
+        <label  for="email">Email: </label>
+        <br>
+                <input class="mytext" id="email" name="email" type="text" >
+        <br>
+        <br>
+         <label for="password">Password: </label> 
+         
+         <br>
+                <input class="mytext" id="password" name="password" type="password" >
+                <br>
+                <br>
+        <input class="button" type="button" value="done" onclick="write_name();"/>
+        <br>
+        <br>
+        <div id="rrr"></div>
+        <br>
+     
+       
+        <br>
+      
+        <br>
+        
+        <input class="button" type="button" value="take quiz" onclick="takeTest();">
+        <br>
+        <br>
+        <p id="Answers"></p>
+        <p id="result"></p>
+        
+    </form>
+        </div>
+    </section>
+
+    <!-- footer start -->
+<footer class="footer" id="footer">
+    <div class="contaainer">
+        <div class="row">
+            <div class="footer-item">
+                <h4>our Address</h4>
+                <p>xyz, street, sector-12,<br>Al Kober- 0000****</p>
+            </div>
+            <div class="footer-item">
+            <h4>Support</h4>
+            <p>Shipping & Returns<br>Warrantly / FAQ</p>
+           </div>
+            <div class="footer-item">
+                <h4>contact us</h4>
+                <p>996 123 456 ***</p>
+                <p>info@gmail.com</p>
+                    <div class="socaial-links">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <div class="row-t">
+              <div class="copyright">
+              <p>&copy;2022 -Made With <i class="fa fa-heart-o"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end-->
+
+
+</body>
+</html>

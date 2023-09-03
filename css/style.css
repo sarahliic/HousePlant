@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: serif;
+   
+}
+/* --------------------Start header---------------------- */
+.contanier {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../img/about/n1.jpg'); /* you have to set the order like this !!!!! very important*/
+
+    
+
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 66px;
+    cursor: pointer;
+    border-radius: 25px;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform:uppercase ;
+    font-size: 13px;
+    font-weight: 10px;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#4a024d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+/* -------------------- End header----------------------*/
+
+
+
+/* -------------Strat pictures--------------*/
+section{
+    overflow: hidden;
+}
+.row{
+    display: flex;
+    height: 75%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+    width: auto;
+
+}
+
+.col h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-left: 10%;
+}
+.col p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 12px;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+/*
+.btn{
+    width: 140px;
+    height: 30px;
+    color: #000;
+    font-size: 20px;
+    background-image: linear-gradient( to right ,green, rgb(87, 211, 37));
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 10%;
+} */
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position:center;
+    background-size: cover;
+    transition: 0.5s;
+    position: relative;
+    
+}
+.card1{
+  background-image: url('../img/silde/card1.jpg');
+}
+.card2{
+    background-image: url('../img/silde/card2.jpg');
+
+
+}
+.card3{ 
+    background-image: url('../img/silde/card3.jpg');
+}
+.card4{  
+    background-image: url('../img/silde/card4.jpg');
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+/* -------------End pictures--------------*/
+
+
+/*  -------------------Start btn design----------------
+------------------------*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    border: 1px solid  #4a024d;
+    border-radius: 30px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 310px;
+    background: #4a024d;
+
+ }
+ .hero-btn:hover{
+     border: 1px solid #4a024d;
+     background: #b808be;
+     color: #fff;
+     transition: 1s;
+ }
+ /*  -------------------END btn design----------------
+------------------------*/
+
+/* -------------------------START design for animation ------------
+--------------------*/
+
+.intro{
+    background: #0c3b10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    background: rgb(129, 146, 128);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.intro-text{
+    color: #ffffff;
+    font-family: hebb;
+    font-size: 3rem;
+
+}
+
+.hide{
+    background: #0c3b10;
+    overflow: hidden; /* to hide the text*/
+}
+.hide span{
+    transform: translateY(100%); /* doesnot work becasue span is inline element so we nees add  "display: inline-block;" */
+    display: inline-block;
+}
+
+/* -------------------------END design for animation ------------
+--------------------*/
+
+
+/* -------------------------START about section-------------------------
+----------------------*/
+.continer{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-padding{
+    padding: 80px 0;
+  
+}
+.about-section{
+    background-color:/*#ebf0eb */#fff  ;
+    display: flex;
+
+}
+.continer-two{ 
+    display: flex;
+}
+/* section tilte*/
+.section-title{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #0c3b10;
+    font-family: 'Acme', sans-serif;
+}
+.section-title h2::before{
+    content: attr(data-tilte);
+    display: block;
+    font-size: 24px;
+    color: #4a024d;
+    font-family: 'Gwendolyn', cursive;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+}
+
+.about-text ,.about-img{
+    width: 50%;
+    padding: 0 15px;
+}
+.about-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    color: #006326;
+    font-family: 'Acme', sans-serif;
+    
+}
+.about-text p{
+    margin: 0 0 15px;
+    color: #000;
+}
+.about-text .hero-btn{
+    margin: 0 0 15px;
+}
+.about-img img{
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 80px;
+}
+
+.about-img .img-box{
+    position: relative; 
+    flex: 33.33%;
+}
+
+.about-img .img-box h3{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: 'Smooch', cursive;
+    color: #0c3b10 ;
+    text-transform: capitalize;
+    margin-left: 60px;
+}
+
+/*-------------------- my slide section START-----------
+---------------------------*/
+.myslide{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #fff; 
+}
+.sliderr{
+    width: 800px; /* 800 */
+    height: 500px; /* 500*/
+    border-radius: 13px; 
+    overflow: hidden;
+    margin: 0 260px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slid{
+    width: 20%;
+    transition: 2s;
+}
+
+.slid img{
+    width: 800px;
+    height: 500px;
+
+}
+/* css for manual slide navigation */
+
+.roow{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* section tilte*/
+.seection-title{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.seection-title h2{
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #0c3b10;
+    font-family: 'Acme', sans-serif;
+}
+.seection-title h2::before{
+    content: attr(data-tilte);
+    display: block;
+    font-size: 24px;
+    color:#4a024d;
+    font-family: 'Gwendolyn', cursive;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top:-40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background: #fff;
+
+}
+ #radio1:checked ~ .first{
+     margin-left: 0;
+ }
+ #radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* css for navigation automatic */
+
+.navigtion-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+
+}
+
+.navigtion-auto div{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigtion-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigtion-auto .auto-btn1{
+    background: #fff;
+}
+#radio2:checked ~ .navigtion-auto .auto-btn1{
+    background: #fff;
+}
+#radio3:checked ~ .navigtion-auto .auto-btn1{
+    background: #fff;
+}
+#radio4:checked ~ .navigtion-auto .auto-btn1{
+    background: #fff;
+}
+
+
+/*-------------------- my slide section END-----------
+---------------------------*/
+
+/*------- footer------- */
+.footer{
+    padding: 80px 0 5px 0 ;
+    background-image: url("../img/mainimg/p1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: -1;
+}
+.footer-item{
+    width: calc(100% /3);
+    padding: 0 15px;
+    text-align: center;
+}
+.footer-item h4{
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 0 0 15px;
+    color: #fff;
+}
+.footer-item p{
+    font-family: 'Source Serif Pro', serif;
+    line-height: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+.footer-item .socaial-links {
+    margin-top: 15px;
+}
+.footer-item .socaial-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+.footer-item .socaial-links a:hover{
+    color: #4a024d;
+}
+.footer  .copyright {
+    width: 100%;
+    text-align: center;
+    
+}
+.footer .row-t .copyright {
+    margin: 80px 0 0;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 14px;
+    border-top: 1px solid #fff;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+/* --footer end--*/

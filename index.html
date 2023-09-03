@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+    <!-- CSS links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Links for browser-->
+    <link rel="icon" href="img/about/spider-plant.png">
+    <!-- JS links-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <section class="contanier">
+        <div class="navbar" id="navLinks">
+            <a href="index.html" ><img src="img/mainimg/sflogo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#static">Statistic</a></li> 
+                <li><a href="html/houseplants.html"> Houseplants</a></li> 
+                <li><a href="html/quiz.html">Take a quiz</a></li> 
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Plants will make <br>your life better</h1>
+                <p>Lorem ipsum dolor sit amet consectetur  elit. Nam aliquam expedita  <br>perspiciatis delectus odit sapiente in labore.</p>
+                <button type="button" class="hero-btn">Explore</button>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card card1" id="card1">
+                   <h5>.</h5>
+                </div>
+                <div class="card card2"  id="card2">
+                    <h5>.</h5>
+                </div>
+                <div class="card card3"  id="card3">
+                    <h5>.</h5>
+                </div>
+                <div class="card card4"  id="card4">
+                    <h5>.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="intro">
+        <div class="intro-text"> <!-- text animation we can see -->
+            <h1 class="hide">
+                <span class="text">Hello everyone</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Welcome To </span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Plants Website</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+
+
+
+    <!-- ------------------About Us start ----------------------->
+    <section class="about-section sec-padding" id="about">
+        <div class="continer">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-tilte="our Plants" data-aos="fade-up">About Us</h2>
+                </div>
+            </div>
+            <div class="continer-two">
+            <div class="about-text" data-aos="fade-right">
+                <h3>Plants Ganna Make People Happy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem quos assumenda velitng elit. Nobis ab modi obcaecati sapiente, temporibus mollitia iusto deserunt veritatis animi optio ex, culpa blanditiis odio explicabo! Corporis numquam mollitia est Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><p>Optio nam quos sietur adipisicing elit. Dolorum, tenetur libero! Soluta, labore! Dolores sequi repellat ipsum exercitationem quibusdam, facilis id distinctio sapiente iure tempore nisi laborum modi. Rem, sint.</p>
+                <ul  >
+                    <li>Lowers levels of anxiety. Constantly seeing and being around plants helps people feel more calm and relaxed, thus decreasing levels of anxiety.</li>
+                    <br><li>Increases attentiveness and memory. </li>
+                    <br><li>Increases productivity. </li>
+                    <br><li>Reduces stress levels and boosts mood.</li>
+                </ul>
+                <br>
+                <!--<a href="menu.html" class="hero-btn">check our menu</a>-->
+            </div>
+            <div class="about-img" data-aos="fade-left">
+            <div class="img-box">
+                <!--<h3>20+ Experience</h3> -->
+                <img src="img/silde/plantabout.png" alt="about img" width="600px">
+            </div>
+            </div>
+           </div>
+        </div>
+    </section>
+ <!-- ------------------About Us End ----------------------->
+
+<!-- -------------------START images section slider------------------------->
+
+<section class="myslide">
+    <div class="roow" >
+        <div class="seection-title" id="slide">
+            <h2 data-tilte="our Plants" data-aos="fade-up">Pictures of Plants</h2>
+        </div>
+    </div>
+      <div class="sliderr" data-aos="fade-left">
+          <div class="slides">
+              <!-- radio button start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+             <!-- radio button end-->
+
+             <!-- slides images start-->
+             <div class="slid first">
+                <img src="img/silde/5.jpg" alt="">
+             </div>
+             <div class="slid">
+                 <img src="img/silde/2.jpg" alt="">
+             </div>
+             <div class="slid">
+                <img src="img/silde/3.jpg" alt="">
+            </div>
+            <div class="slid">
+                <img src="img/silde/4.jpg" alt="">
+            </div>
+             <!-- slides images end-->
+
+             <!-- automatic navigation satart -->
+             <div class="navigtion-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- automatic navigation end-->
+         </div>
+         <!-- manual navigation start-->
+         <div class="navigation-manual">
+             <label for="radio1" class="manual-btn"></label>
+             <label for="radio2" class="manual-btn"></label>
+             <label for="radio3" class="manual-btn"></label>
+             <label for="radio4" class="manual-btn"></label>
+
+         </div>
+         <!-- manual navigation end-->
+     </div>
+     <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked= true;
+            counter++;
+            if(counter>4){
+               counter =1;
+            }
+
+        },5000); 
+        /*  var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked= true;
+            counter++;
+            for(i = 1; i>counter.lenght;i++)
+               counter =1;
+            }
+        },5000);  */
+    </script>
+    </section>
+<!-- -------------------END images section slider------------------------->
+
+
+
+ <!----------------- Start Statistic Section----------------------->
+
+ <section class="about-section sec-padding" id="static">
+    <div class="continer">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-tilte="our Statistics" data-aos="fade-up">Statistics on extinct plants</h2>
+            </div>
+        </div>
+        <div class="continer-two">
+        <div class="about-text"data-aos="fade-right">
+            <h3> Study shows plant extinction is more common than previously realized</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aliquam quisquam voluptate
+                s, rem sit magnam corporis eum id fugit ut, recusandae molestiae at, voluptatem quo ratione? 
+                Facilis amet suscipit perspiciatis 
+                porro alias ipsam mollitia?
+                dolor sit amet consectetur adipisicing elit. Ipsum aliquam quisquam voluptate
+                s, rem sit magnam corporis eum id fugit ut, recusandae molestiae at, voluptatem qu
+                Facilis amet suscipit perspiciatis 
+                porro alias ipsam mollitia </p>
+            <p> ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aliquam quisquam voluptate
+                s, rem sit magnam corporis eum id fugit ut, recusandae molestiae at, voluptatem quo ratione? 
+                Facilis amet suscipit perspiciatis 
+                porro alias ipsam mollitia</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum aliquam quisquam voluptate
+                s, rem sit magnam corporis eum id fugit ut, recusandae molestiae at, voluptatem quo ratione? 
+                Facilis amet suscipit perspiciatis 
+                porro ali , dolor sit amet consectetur adipisicing elit. Ipsum aliquam quisquam voluptate
+                s, rem sit magnam corporis eum id fugit ut, recusandae molestiae at, voluptatem qu
+                Facilis amet suscipit perspiciatis 
+                porro alias ipsam mollitia </p>
+            
+            <br> <!--<a href="menu.html" class="hero-btn">check our menu</a>-->
+        </div>
+        <div class="about-img" data-aos="fade-left">
+        <div class="img-box">
+            <!--<h3>20+ Experience</h3> -->
+            <div id="myPlot" style="width:100%;max-width:700px"></div>
+            <script>
+                var xArray = ["Herbs","Shrubs","Trees","Climbers","Creepers"];
+                var yArray = [150,210,450,600,800];
+                
+                // Define Data
+                var data = [{
+                  x:xArray,
+                  y:yArray,
+                  type:"bar"
+                }];
+                
+                // Define Layout
+                var layout = {
+                  xaxis: {title: "Plants"},
+                  yaxis: {title: "no. of Plants"},  
+                  title: "Number of species that have gone extinct since 1900, 2020"};
+                
+                // Display using Plotly
+                Plotly.newPlot("myPlot", data, layout);
+                </script>          
+        </div>
+        </div>
+       </div>
+    </div>
+</section>
+
+ <!----------------- END Statistic Section----------------------->
+
+   
+ <!-- footer start -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-item">
+                <h4>our Address</h4>
+                <p>xyz, street, sector-12,<br>Al Kober- 0000****</p>
+            </div>
+            <div class="footer-item">
+            <h4>Support</h4>
+            <p>Shipping & Returns<br>Warrantly / FAQ</p>
+           </div>
+            <div class="footer-item">
+                <h4>contact us</h4>
+                <p>996 123 456 ***</p>
+                <p>info@gmail.com</p>
+                    <div class="socaial-links">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <div class="row-t">
+              <div class="copyright">
+              <p>&copy;2022 -Made With <i class="fa fa-heart-o"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end-->
+
+
+     <!--JS links-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="js/script.js"></script>
+     <script src="js/aos.js"></script>
+</body>
+</html>
